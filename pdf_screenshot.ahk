@@ -19,7 +19,7 @@ image_capture(tit){
     pBitmap := Gdip_BitmapFromScreen("384|162|719|929") ; 이곳에 window spy로 얻은 좌표를 넣어준다 //  시작 X|시작 Y |시작X로부터 길이|시작Y로부터 높이
 
     ; msgbox, %pBitmap%
-    Gdip_SaveBitmapToFile(pBitmap, p_sum)
+    Gdip_SaveBitmapToFile(pBitmap, p_sum, 100) ; fucking quality 100
     Gdip_DisposeImage(pBitmap)
     Gdip_Shutdown(pToken)
     suffix := suffix+1
