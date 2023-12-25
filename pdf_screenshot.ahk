@@ -51,7 +51,7 @@ loop,
 
     if (suffix > last_page)
         {
-            msgbox, Conguraturations! capture complete
+            msgbox, Congratulations! capture complete
             break
         }
     
